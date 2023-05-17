@@ -1,0 +1,210 @@
+:root {
+
+    --accent: rgb(5, 172, 89);
+    --white: #ffffff;
+    --black:#000000;
+    --grey:#131313;
+    --quick: all 0.33s ease-out; 
+
+}
+
+*::after,*::before,* {
+    box-shadow: border-box;
+    margin: 0px;
+    padding: 0px;
+   // border: 1px dotted red;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+body{
+
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background:var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+}
+
+::-moz-selection { /* Code for Firefox */
+
+    background: var(--accent);
+  }
+  
+  ::selection {
+    background: var(--accent);
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+  //font-family: 'Montserrat', sans-serif;
+
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 58
+}
+
+
+
+// general css
+
+label{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+span {
+    font-weight: 100 !important;
+    opacity: 0.5;
+}
+
+
+input, select , option {
+    padding: 10px 30px;
+    border-radius: 10px ;
+    font-weight: 500;
+    width: 200px;
+    background: var(--black);
+    border: 1px solid rgba(255, 255, 255, 0.202);
+    color: var(--white);
+}
+
+
+
+
+// main css
+
+
+nav{
+    background: var(--grey);height: 100vh;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 2;
+    padding-top: 100px;
+
+    button{
+        width: 100%;
+        padding: 25px 0px ;
+        background: var(--black);
+        border: none;
+        margin: 10px 0px;
+        color: var(--white);
+        transition: var(--quick);
+        font-weight: 600;
+        font-size:20px ;
+        &:hover , &.active{
+            background: var(--accent);
+        }
+    }
+
+
+
+}
+
+
+.page{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.page1{
+
+
+    
+    
+    
+
+    
+    h3{
+        font-size: 40px;
+        margin: 50px;
+    }
+
+    
+
+    form{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+
+
+
+        .line{
+
+            display: flex;
+            width: 1000px;
+            justify-content: space-between;
+            padding: 10px 30px;
+            align-items: center;
+            margin: 10px;
+            background: var(--grey);
+            border-radius: 10px;
+
+            &.line-v{
+                flex-direction: column;
+                align-items: flex-start;
+
+                label{
+                    margin-bottom: 20px;
+                }
+            }
+
+            .box{
+
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                button{
+                    padding: 15px 20px;
+                    margin: 10px;
+                    background: var(--black);
+                    border: 1px solid rgba(255, 255, 255, 0.241);
+                    border-radius: 10px;
+                    color: var(--white);
+                    transition: var(--quick);
+                    &:hover{
+                        background: var(--accent);
+                    }
+
+
+
+                }
+
+               
+
+               
+            }
+
+            
+
+        }
+
+
+    }
+
+
+
+}
