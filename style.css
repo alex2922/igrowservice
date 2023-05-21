@@ -8,7 +8,7 @@
 }
 
 *::after, *::before, * {
-  box-shadow: border-box;
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   font-family: "Montserrat", sans-serif;
@@ -47,11 +47,15 @@ span {
   opacity: 0.5;
 }
 
+select:focus, input:focus {
+  outline: 2px solid var(--accent);
+}
+
 input, select, option {
   padding: 10px 30px;
   border-radius: 10px;
   font-weight: 500;
-  width: 200px;
+  width: 400px;
   background: var(--black);
   border: 1px solid rgba(255, 255, 255, 0.202);
   color: var(--white);
@@ -94,13 +98,13 @@ nav button:hover, nav button.active {
   font-size: 40px;
   margin: 50px;
 }
-.page1 form {
+.page1 formt {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
-.page1 form .line {
+.page1 formt .line {
   display: flex;
   width: 1000px;
   justify-content: space-between;
@@ -110,27 +114,44 @@ nav button:hover, nav button.active {
   background: var(--grey);
   border-radius: 10px;
 }
-.page1 form .line.line-v {
+.page1 formt .line.line-v {
   flex-direction: column;
   align-items: flex-start;
 }
-.page1 form .line.line-v label {
+.page1 formt .line.line-v label {
   margin-bottom: 20px;
 }
-.page1 form .line .box {
+.page1 formt .line .box {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.page1 form .line .box button {
+.page1 formt .line .box button {
   padding: 15px 20px;
   margin: 10px;
   background: var(--black);
   border: 1px solid rgba(255, 255, 255, 0.241);
   border-radius: 10px;
   color: var(--white);
+  border: 2px solid transparent;
   transition: var(--quick);
 }
-.page1 form .line .box button:hover {
+.page1 formt .line .box button:hover {
   background: var(--accent);
+}
+.page1 formt .line .box button.selected {
+  background: var(--accent);
+  border: 2px solid var(--white);
+}
+.page1 formt .line .box button.selected:hover {
+  background: rgba(255, 0, 0, 0.489);
+}
+.page1 formt .line .box button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  text-decoration: line-through;
+}
+.page1 formt .price {
+  height: 100px;
+  width: 1000px;
 }/*# sourceMappingURL=style.css.map */

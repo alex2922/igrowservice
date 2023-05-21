@@ -9,7 +9,7 @@
 }
 
 *::after,*::before,* {
-    box-shadow: border-box;
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
    // border: 1px dotted red;
@@ -71,14 +71,22 @@ span {
 }
 
 
+select:focus, input:focus{
+    outline: 2px solid var(--accent);
+}
+
 input, select , option {
     padding: 10px 30px;
     border-radius: 10px ;
     font-weight: 500;
-    width: 200px;
+    width: 400px;
     background: var(--black);
     border: 1px solid rgba(255, 255, 255, 0.202);
     color: var(--white);
+
+   
+
+
 }
 
 
@@ -141,7 +149,7 @@ nav{
 
     
 
-    form{
+    formt{
 
         display: flex;
         flex-direction: column;
@@ -184,9 +192,25 @@ nav{
                     border: 1px solid rgba(255, 255, 255, 0.241);
                     border-radius: 10px;
                     color: var(--white);
+                    border: 2px solid transparent;
                     transition: var(--quick);
                     &:hover{
                         background: var(--accent);
+                    }
+
+
+                    &.selected{
+                        background: var(--accent);
+                        border: 2px solid var(--white);
+                        &:hover{
+                            background: rgba(255, 0, 0, 0.489);
+                        }
+                    }
+                    &.disabled{
+                        opacity: 0.5;
+                        pointer-events: none;
+                        text-decoration: line-through;
+                        
                     }
 
 
@@ -200,6 +224,14 @@ nav{
 
             
 
+        }
+
+
+
+        .price{
+      
+            height: 100px;
+            width: 1000px;
         }
 
 

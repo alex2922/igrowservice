@@ -25,7 +25,7 @@
 
     <div class="page page1">
       <h3>Igrow Website Services</h3>
-      <form action="">
+      <formt action="">
         <div class="line">
           <label>Type of website</label>
 
@@ -67,25 +67,33 @@
           <label>Please select the needed functionality <span > <em> ( Click to select )</em></span> </label>
           <div class="box">
             
-            <button>Gallery page</button>
-            <button>Whatsapp Button</button>
-            <button>Testimonial section</button>
-            <button>Pop form</button>
-            <button>Seperate login profiles</button>
-            <button>payments gateway</button>
+            <button id="gallery" onclick=" registerClick(gallery)" class="selector " >Gallery page</button>
+            <button id="whatsapp" onclick=" registerClick(whatsapp)" class="selector" >Whatsapp Button</button>
+            <button id="review" onclick=" registerClick(review)" class="selector">Testimonial section</button>
+            <button id="" onclick=" registerClick()" class="selector">Pop form</button>
+            <button id="" onclick=" registerClick()" class="selector">Seperate login profiles</button>
+            <button id="" onclick=" registerClick()" class="selector">Locally hosted videos</button>
+            <button id="" onclick=" registerClick()" class="selector disabled">payments gateway</button>
+
+    
           </div>
         </div>
 
 
-        <div class="price">
+        <div class="price line">
 
+          <p>Final quotation</p>
+          <h3>₹ <span id="price"></span></h3>
 
         </div>
 
         
 
 
-      </form>
+      </formt>
     </div>
+
+
+    <script src="app.js" ></script>
   </body>
 </html>
