@@ -29,6 +29,7 @@ function registerClick(elementId) {
     
   } else if (!elementId.classList.contains("selected")) {
     elementId.classList.add("selected");
+  
 
   }
 }
