@@ -1,6 +1,16 @@
 var gallery = document.getElementById("gallery");
 var whatsapp = document.getElementById("whatsapp");
 var review = document.getElementById("review");
+var popform = document.getElementById("popform");
+var userprofilesv = document.getElementById("userprofiles");
+var lhv = document.getElementById("lhv");
+var pg = document.getElementById("pg");
+
+
+
+
+
+var mainoption = document.getElementById("mainoption");
 
 
 
@@ -24,3 +34,7 @@ function registerClick(elementId) {
 }
 
 
+
+if (mainoption.value =="3" ) {
+  document.querySelector("#line-hide").style.display = "none";
+}
