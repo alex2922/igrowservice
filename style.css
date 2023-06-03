@@ -61,6 +61,12 @@ input, select, option {
   color: var(--white);
 }
 
+.disabled {
+  opacity: 0.23;
+  pointer-events: none;
+  text-decoration: line-through;
+}
+
 nav {
   background: var(--grey);
   height: 100vh;
@@ -95,7 +101,7 @@ nav button:hover, nav button.active {
 }
 
 .page1 h3 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 50px;
 }
 .page1 formt {
@@ -146,12 +152,12 @@ nav button:hover, nav button.active {
 .page1 formt .line .box button.selected:hover {
   background: rgba(255, 0, 0, 0.489);
 }
-.page1 formt .line .box button.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-  text-decoration: line-through;
-}
 .page1 formt .price {
   height: 100px;
   width: 1000px;
+  font-weight: 700 !important;
+}
+
+#linehide-products, #linehide-services {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

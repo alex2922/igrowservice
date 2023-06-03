@@ -84,11 +84,15 @@ input, select , option {
     border: 1px solid rgba(255, 255, 255, 0.202);
     color: var(--white);
 
-   
-
-
 }
 
+
+.disabled{
+    opacity: 0.23;
+    pointer-events: none;
+    text-decoration: line-through;
+    
+}
 
 
 
@@ -143,7 +147,7 @@ nav{
 
     
     h3{
-        font-size: 40px;
+        font-size: 50px;
         margin: 50px;
     }
 
@@ -206,12 +210,7 @@ nav{
                             background: rgba(255, 0, 0, 0.489);
                         }
                     }
-                    &.disabled{
-                        opacity: 0.5;
-                        pointer-events: none;
-                        text-decoration: line-through;
-                        
-                    }
+                    
 
 
 
@@ -232,6 +231,7 @@ nav{
       
             height: 100px;
             width: 1000px;
+            font-weight: 700 !important;
         }
 
 
@@ -239,4 +239,8 @@ nav{
 
 
 
+}
+
+#linehide-products , #linehide-services {
+    display: none;
 }
